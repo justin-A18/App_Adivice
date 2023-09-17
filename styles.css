@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+:root{
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --LightCyan: hsl(193, 38%, 86%);
+    --NeonGreen: hsl(150, 100%, 66%);
+    
+    /* ### Neutral */
+    
+    --GrayishBlue: hsl(217, 19%, 38%);
+    --DarkGrayishBlue: hsl(217, 19%, 24%);
+    --DarkBlue: hsl(218, 23%, 16%);
+
+}
+
+html{
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin: .5rem;
+}
+
+picture{
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.container-principal{
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--DarkBlue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.consejos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--DarkGrayishBlue);
+    border-radius: 1rem;
+    width: 35rem;
+    height: 30rem;
+    padding: 1rem;
+    padding-top: 3rem;
+    position: relative;
+}
+
+.consejos__id{
+    font-size: 1.2rem;
+    letter-spacing: .3rem;
+    color: var(--NeonGreen);
+    font-family: 'Manrope', sans-serif;
+}
+
+.consejos__content{
+    font-size: 2.4rem;
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    color: var(--LightCyan);
+}
+
+.btn-random{
+    position: absolute;
+    bottom: -1.5rem;
+    border: none;
+    background-color: var(--NeonGreen);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.consejos__images{
+    position: absolute;
+    bottom: 5rem;
+}
+
+.btn-random:hover{
+    background-color: var(--LightCyan);
+}
+
+
